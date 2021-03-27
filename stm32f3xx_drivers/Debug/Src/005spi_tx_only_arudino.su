@@ -1,0 +1,5 @@
+005spi_tx_only_arudino.c:25:6:SPI2_GPIOInits	24	static
+005spi_tx_only_arudino.c:51:6:GPIO_ButtonInit	24	static
+005spi_tx_only_arudino.c:66:6:SPI2_Inits	24	static
+005spi_tx_only_arudino.c:84:6:delay	16	static
+005spi_tx_only_arudino.c:89:5:main	24	static

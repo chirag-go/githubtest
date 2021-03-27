@@ -1,0 +1,5 @@
+gpio_driver.c:21:6:GPIO_PeriClockControl	16	static
+gpio_driver.c:65:6:GPIO_Init	32	static
+gpio_driver.c:123:6:GPIO_WriteToPin	16	static
+gpio_driver.c:132:6:GPIO_TogglePin	16	static
+gpio_driver.c:136:9:GPIO_ReadFromPin	24	static
