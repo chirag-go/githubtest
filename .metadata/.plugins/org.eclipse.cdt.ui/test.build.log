@@ -1,0 +1,20 @@
+19:50:31 **** Incremental Build of configuration Debug for project test ****
+make -j6 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F3 -DDEBUG -DSTM32F303RETx -DNUCLEO_F303RE -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Chirag Goyal\Desktop\stm workspace\githubtest\test\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test.elf
+ 
+arm-none-eabi-objdump -h -S  test.elf  > "test.list"
+arm-none-eabi-objcopy  -O binary  test.elf  "test.bin"
+arm-none-eabi-size   test.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3456	    108	   1580	   5144	   1418	test.elf
+Finished building: default.size.stdout
+ 
+Finished building: test.bin
+Finished building: test.list
+ 
+ 
+
+19:50:31 Build Finished. 0 errors, 0 warnings. (took 391ms)
+

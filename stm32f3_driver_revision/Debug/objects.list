@@ -1,0 +1,3 @@
+"Src/led_toggle.o"
+"Startup/startup_stm32f303retx.o"
+"driver/src/gpio_driver.o"

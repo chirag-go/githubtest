@@ -1,0 +1,20 @@
+20:44:03 **** Incremental Build of configuration Debug for project stm32f3xx_drivers ****
+make -j6 all 
+arm-none-eabi-gcc "../Src/005spi_tx_only_arudino.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F3 -DDEBUG -DSTM32F303RETx -DNUCLEO_F303RE -c -I../Inc -I"C:/Users/Chirag Goyal/Desktop/stm workspace/githubtest/stm32f3xx_drivers/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/005spi_tx_only_arudino.d" -MT"Src/005spi_tx_only_arudino.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/005spi_tx_only_arudino.o"
+arm-none-eabi-gcc -o "stm32f3xx_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Chirag Goyal\Desktop\stm workspace\githubtest\stm32f3xx_drivers\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f3xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f3xx_drivers.elf
+ 
+arm-none-eabi-objdump -h -S  stm32f3xx_drivers.elf  > "stm32f3xx_drivers.list"
+arm-none-eabi-objcopy  -O binary  stm32f3xx_drivers.elf  "stm32f3xx_drivers.bin"
+arm-none-eabi-size   stm32f3xx_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3080	      8	   1568	   4656	   1230	stm32f3xx_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f3xx_drivers.bin
+Finished building: stm32f3xx_drivers.list
+ 
+ 
+
+20:44:03 Build Finished. 0 errors, 0 warnings. (took 386ms)
+
